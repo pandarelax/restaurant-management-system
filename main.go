@@ -5,8 +5,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"os"
 	"restaurant_management/database"
-	"restaurant_management/middleware"
-	"restaurant_management/routes"
+	middleware "restaurant_management/middleware"
+	routes "restaurant_management/routes"
 )
 
 var foodCollection *mongo.Collection = database.OpenCollection(database.Client, "food")
